@@ -18,3 +18,10 @@ public class ServiceLocatorTest
         Assert.Equal(expected, actual);
     }
 }
+    public void Service2Test()
+    {
+        var expected = "У рояля";
+        var actual = SalonLib.ServiceLocator.GetService("Петь романсы");
+        Assert.Equal(expected, actual);
+    }
+}
